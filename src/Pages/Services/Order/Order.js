@@ -23,10 +23,8 @@ const Order = () => {
     const { register, handleSubmit, reset } = useForm();
 
     const onSubmit = (data) => {
-        data.bikeName = service?.name;
+        data.carName = service?.name;
         data.price = service?.price;
-        data.Mileage = service?.Mileage;
-        data.Engine = service?.Engine;
         data.img = service?.img;
         data.state = "pending";
         fetch("http://localhost:8000/addEvent", {

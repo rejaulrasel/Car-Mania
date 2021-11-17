@@ -77,7 +77,7 @@ const MyOrder = () => {
                         <tbody key={event?._id}>
                             <tr>
                                 <td>{index + 1}</td>
-                                <td>{event?.CarName}</td>
+                                <td>{event?.carName}</td>
                                 <td><img src={event?.img} width="100px" style={{borderRadius:"50%"}} className="img-fluid" alt="" /> </td>
                                 <td>{event?.userName}</td>
                                 <td>{event?.email}</td>

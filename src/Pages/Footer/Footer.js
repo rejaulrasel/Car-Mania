@@ -22,7 +22,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-5">
               <div className="left-container text-start">
-                <h1>Road-Eagles</h1>
+                <h1>Car-Mania</h1>
                 <div className="icons-container d-flex text-center ">
                   <div className="icon">
                     <FontAwesomeIcon icon={faInstagramSquare} />

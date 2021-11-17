@@ -1,9 +1,13 @@
 import React from 'react';
 import img from '../../images/Screenshot 2021-11-18 025948.png'
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 
 const Contact = () => {
     return (
         <div>
+            <Header></Header>
+            <div>
             <div className="mx-auto text-center m-4 py-4"><h1 style={{color:"goldenrod"}}>Contact</h1></div>
             <div className="container contact-container container-fluid">
                 <div className="contact-info">
@@ -68,6 +72,8 @@ const Contact = () => {
                 </div>
             </div>
         </div >
+            <Footer></Footer>
+        </div>
     );
 };
 

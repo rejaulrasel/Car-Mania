@@ -14,8 +14,8 @@ const Home = () => {
             <Banner></Banner>
             <HomeService></HomeService>
             {/* <CommentSection></CommentSection> */}
-            {/* <Contact></Contact> */}
-            {/* <Footer></Footer> */}
+            <Contact></Contact>
+            <Footer></Footer>
         </div>
     );
 };

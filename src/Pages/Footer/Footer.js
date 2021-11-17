@@ -57,9 +57,6 @@ const Footer = () => {
                   <Link className="footer-menu text-decoration-none text-white pb-4" to="/login">Login</Link>
                   <br />
                   <Link className="footer-menu text-decoration-none text-white pb-4" to="/about">About Us</Link>
-                  <br />
-                  <Link className="footer-menu text-decoration-none text-white pb-4" to="/contact">Contact Us</Link>
-                  <br />
                 </ul>
               </div>
             </div>

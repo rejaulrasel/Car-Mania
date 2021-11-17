@@ -24,7 +24,7 @@ const Register = () => {
 
     const handleLoginSubmit = e => {
         if (loginData.password !== loginData.password2) {
-            alert ( "Oops" ,  "Password didn't match" ,  "error" );
+            swal ( "Oops" ,  "Password didn't match" ,  "error" );
             return
         }
         registerUser(loginData.email, loginData.password, loginData.name, history);

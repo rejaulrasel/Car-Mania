@@ -32,25 +32,25 @@ function App() {
           <Route path='/services'>
             <Services></Services>
           </Route>
-          {/* <PrivateRoute path='/booking/:serviceId'>
+          <PrivateRoute path='/booking/:serviceId'>
             <Order></Order>
-          </PrivateRoute> */}
+          </PrivateRoute>
           
           <Route path='/about'>
             <About></About>
           </Route>
-          {/* <PrivateRoute path='/pay'>
+          <PrivateRoute path='/pay'>
             <Pay></Pay>
-          </PrivateRoute> */}
-          {/* <PrivateRoute path='/myOrders'>
+          </PrivateRoute>
+          <PrivateRoute path='/myOrders'>
             <MyOrder></MyOrder>
-          </PrivateRoute> */}
+          </PrivateRoute>
           {/* <PrivateRoute path='/review'>
             <Review></Review>
           </PrivateRoute> */}
-          {/* <PrivateRoute path='/dashboard'>
+          <PrivateRoute path='/dashboard'>
             <Dashboard></Dashboard>
-          </PrivateRoute> */}
+          </PrivateRoute>
           <Route path='/login'>
             <Login></Login>
           </Route>

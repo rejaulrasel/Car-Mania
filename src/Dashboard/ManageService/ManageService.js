@@ -18,7 +18,7 @@ const ManageService = () => {
     }, [])
 
     const handleDelete = id => {
-        // console.log(id);
+        console.log(id);
         swal({
             title: "Are you sure?",
             text: "Once deleted, you will not be able to recover this file!",
@@ -54,7 +54,7 @@ const ManageService = () => {
 
     return (
         <div className="my-4">
-            <h1 className="text-center">Explore Bikes</h1>
+            <h1 className="text-center">Explore Cars</h1>
             <div className="row container-fluid container mx-auto">
                 {
                     services.map(service => <Service

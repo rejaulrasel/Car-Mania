@@ -6,7 +6,6 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
-// import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import { Typography, Button } from "@mui/material";
 import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
@@ -38,13 +37,6 @@ function Dashboard(props) {
     <div>
       <Toolbar />
       <Divider />
-      {/* <List>
-          <ListItem button>
-            <ListItemText>
-              <Link to="/">Home</Link>
-            </ListItemText>
-          </ListItem>
-        </List> */}
       <Box sx={{ mt: 1 }}>
         {admin ? (
           <>
@@ -115,7 +107,7 @@ function Dashboard(props) {
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: "none" } }}
           >
-            {/* <MenuIcon /> */}
+
           </IconButton>
           <Typography variant="h6" noWrap component="div">
             Dashboard

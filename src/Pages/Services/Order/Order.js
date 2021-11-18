@@ -47,11 +47,11 @@ const Order = () => {
                 <h2 className="my-4 text-center">Order {service?.name}</h2>
                 <div className="row">
                     <div className="col-md-6">
-                        <div class="card" style={{ width: "18rem" }}>
-                            <img src={service?.img} class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <h4 class="card-title">{service?.name}</h4>
-                                <p class="card-text">{service?.description}</p>
+                        <div className="card" style={{ width: "18rem" }}>
+                            <img src={service?.img} className="card-img-top" alt="..." />
+                            <div className="card-body">
+                                <h4 className="card-title">{service?.name}</h4>
+                                <p className="card-text">{(service?.description)?.slice(0,250)}</p>
                                 <h3>Price: <span style={{ color: "goldenrod" }}>{service?.price}$</span></h3>
                             </div>
                         </div>
@@ -66,7 +66,7 @@ const Order = () => {
                             <input className="mb-2" type="number" placeholder="Enter Your Phone No" {...register("phone", { required: true, maxLength: 100 })} />
                             <input className="mb-2" placeholder="Travel date" type="date"  {...register("deliverDate", { required: true })} />
 
-                            <input className="btn btn-warning text-white" type="submit" />
+                            <input className="btn btn-warning text-white" type="Submit" />
                         </form>
                     </div>
                 </div>

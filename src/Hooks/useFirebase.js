@@ -105,7 +105,7 @@ const useFirebase = () => {
     const saveUser = (email,displayName,method) => {
         const user = {email,displayName};
         
-        fetch('https://calm-dawn-94337.herokuapp.com/users',{
+        fetch('http://localhost:8000/users',{
             method:method,
             headers:{
                 'content-type': 'application/json'

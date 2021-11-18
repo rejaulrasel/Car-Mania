@@ -13,6 +13,7 @@ const useFirebase = () => {
     const [authError, setAuthError] = useState('');
     const [isLoading, setIsLoading] = useState(true);
     const [admin, setAdmin] = useState(false)
+    console.log(admin)
 
 
     const auth = getAuth();
@@ -87,7 +88,7 @@ const useFirebase = () => {
     }, []);
 
     useEffect(() => {
-        fetch(`https://calm-dawn-94337.herokuapp.com/users/${user.email}`)
+        fetch(`http://localhost:8000/users/${user.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
     }, [user.email])

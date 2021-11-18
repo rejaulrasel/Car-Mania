@@ -11,17 +11,17 @@ const Header = () => {
         <>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
                 <Container>
-                    <Navbar.Brand href="/home">CAR-Mania</Navbar.Brand>
+                    <Navbar.Brand href="/home"><h3>CAR-Mania</h3></Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link as={Link} to="/home">Home</Nav.Link>
-                        <Nav.Link as={Link} to="/services">Services</Nav.Link>
+                        <Nav.Link as={Link} to="/services">Shop</Nav.Link>
                         {user?.email ?
-                            <div className="d-flex flex-row">
+                            <div className="d-flex flex-row me-3">
                                 <Nav.Link as={Link} to="/dashboard">
                                     Dashboard
                                 </Nav.Link>
-                                <button className="btn btn-danger" onClick={logout}>Logout</button>
+                                <button className="btn btn-warning" onClick={logout}>Logout</button>
                             </div>
                             :
                             <Nav.Link as={Link} to="/login">Login</Nav.Link>

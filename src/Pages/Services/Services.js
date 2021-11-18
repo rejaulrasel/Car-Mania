@@ -22,7 +22,7 @@ const Services = () => {
         <>
             <Header></Header>
             <div className="my-4">
-                <h1 className="text-center">Explore Cars</h1>
+                <h1 className="text-center">Choose Your Best One</h1>
                 <div className="row container-fluid container mx-auto">
                     {
                         services.map(service => <Service

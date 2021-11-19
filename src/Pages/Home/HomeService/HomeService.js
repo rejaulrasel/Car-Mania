@@ -17,7 +17,7 @@ const HomeService = () => {
 
     return (
         <div className="my-4">
-            <h1 className="text-center">Cars-Hype </h1>
+            <h1 className="text-center">Mazda Car-Hypes </h1>
             <div className="row container-fluid container mx-auto">
                 {
                     services.slice(0, 6).map(service => <Service

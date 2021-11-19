@@ -9,7 +9,7 @@ const ManageService = () => {
     const { admin } = useAuth();
 
     useEffect(() => {
-        fetch('http://localhost:8000/services')
+        fetch('https://polar-savannah-62685.herokuapp.com/services')
             .then(res => res.json())
             .then(data => {
                 setServices(data);
@@ -29,7 +29,7 @@ const ManageService = () => {
             .then((willDelete) => {
                 if (willDelete) {
 
-                    fetch(`http://localhost:8000/deleteService/${id}`, {
+                    fetch(`https://polar-savannah-62685.herokuapp.com/deleteService/${id}`, {
                         method: "Delete",
                         headers: { "content-type": "application/json" },
                     }, [])

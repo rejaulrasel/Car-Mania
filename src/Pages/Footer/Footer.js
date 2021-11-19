@@ -52,7 +52,7 @@ const Footer = () => {
                 
                   <Link className="footer-menu text-decoration-none text-white pb-4" to="/home">Home</Link>
                   <br />
-                  <Link className="footer-menu text-decoration-none text-white" to="/services">Services</Link>
+                  <Link className="footer-menu text-decoration-none text-white" to="/services">Shop</Link>
                   <br />
                   <Link className="footer-menu text-decoration-none text-white pb-4" to="/login">Login</Link>
                   <br />

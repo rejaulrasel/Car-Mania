@@ -10,7 +10,7 @@ const MyOrder = () => {
     const {user} = useAuth();
 
     useEffect(() => {
-        fetch(`http://localhost:8000/myEvents/${user?.email}`)
+        fetch(`https://polar-savannah-62685.herokuapp.com/myEvents/${user?.email}`)
         .then(res => res.json())
         .then(data => setEvents(data));
     },[user.email]);
@@ -28,7 +28,7 @@ const MyOrder = () => {
             .then((willDelete) => {
                 if (willDelete) {
 
-                    fetch(`http://localhost:8000/deleteEvents/${id}`, {
+                    fetch(`https://polar-savannah-62685.herokuapp.com/deleteEvents/${id}`, {
                         method: "Delete",
                         headers: { "content-type": "application/json" },
                     }, [])

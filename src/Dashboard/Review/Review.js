@@ -22,7 +22,7 @@ const Review = () => {
             comment: comment,
             rating: value,
         };
-        fetch("http://localhost:8000/user/review", {
+        fetch("https://polar-savannah-62685.herokuapp.com/user/review", {
             headers: {
                 "Content-Type": "application/json",
             },

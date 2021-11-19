@@ -15,7 +15,7 @@ const Order = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:8000/services/${serviceId}`)
+        fetch(`https://polar-savannah-62685.herokuapp.com/services/${serviceId}`)
             .then(res => res.json())
             .then(data => setService(data))
     }, []);
@@ -27,7 +27,7 @@ const Order = () => {
         data.price = service?.price;
         data.img = service?.img;
         data.state = "pending";
-        fetch("http://localhost:8000/addEvent", {
+        fetch("https://polar-savannah-62685.herokuapp.com/addEvent", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

@@ -11,7 +11,7 @@ const AddService = () => {
 
     const onSubmit = data => {
         console.log(data);
-        fetch('http://localhost:8000/addServices', {
+        fetch('https://polar-savannah-62685.herokuapp.com/addServices', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data)

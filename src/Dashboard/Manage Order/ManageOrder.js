@@ -12,7 +12,7 @@ const ManageOrder = () => {
     const { user } = useAuth();
 
     useEffect(() => {
-        fetch(`http://localhost:8000/allEvents`)
+        fetch(`https://polar-savannah-62685.herokuapp.com/allEvents`)
             .then(res => res.json())
             .then(data => setOrders(data));
     }, [user.email]);
@@ -29,7 +29,7 @@ const ManageOrder = () => {
             .then((willDelete) => {
                 if (willDelete) {
 
-                    fetch(`http://localhost:8000/deleteEvents/${id}`, {
+                    fetch(`https://polar-savannah-62685.herokuapp.com/deleteEvents/${id}`, {
                         method: "Delete",
                         headers: { "content-type": "application/json" },
                     }, [])
@@ -58,7 +58,7 @@ const ManageOrder = () => {
 
         if (order?.state === "pending") {
             axios
-                .put(`http://localhost:8000/updateState/${id}`, {
+                .put(`https://polar-savannah-62685.herokuapp.com/updateState/${id}`, {
                     state: "Shipped",
                 })
                 .then((res) => {

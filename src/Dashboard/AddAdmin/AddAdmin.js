@@ -13,7 +13,7 @@ const AddAdmin = () => {
      const handleAdminSubmit = e =>{
         const user = {email}
 
-        fetch('http://localhost:8000/users/adminAdd', {
+        fetch('https://polar-savannah-62685.herokuapp.com/users/adminAdd', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

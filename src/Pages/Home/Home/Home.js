@@ -9,7 +9,7 @@ import HomeService from '../HomeService/HomeService';
 
 const Home = () => {
     return (
-        <div>
+        <div className='overflow-hidden'>
             <Header></Header>
             <Banner></Banner>
             <HomeService></HomeService>

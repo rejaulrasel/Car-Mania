@@ -21,7 +21,7 @@ const Header = () => {
                                 <Nav.Link as={Link} to="/dashboard">
                                     Dashboard
                                 </Nav.Link>
-                                <button className="btn btn-warning" onClick={logout}>Logout</button>
+                                <button className="btn btn-primary" onClick={logout}>Logout</button>
                             </div>
                             :
                             <Nav.Link as={Link} to="/login">Login</Nav.Link>

@@ -11,6 +11,7 @@ const Banner = () => {
             <Carousel>
                 <Carousel.Item>
                     <img
+                        style={{height:'100vh'}} 
                         className="d-block w-100"
                         src={banner1}
                         alt="Royal Enfield Classic 350"
@@ -22,6 +23,7 @@ const Banner = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
+                        style={{height:'100vh'}}
                         className="d-block w-100"
                         src={banner2}
                         alt="KTM RC 125"
@@ -34,6 +36,7 @@ const Banner = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
+                        style={{height:'100vh'}}
                         className="d-block w-100"
                         src={banner3}
                         alt="Third slide"

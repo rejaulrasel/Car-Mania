@@ -27,9 +27,15 @@ const Header = () => {
                             <Nav.Link as={Link} to="/login">Login</Nav.Link>
                         }
 
-                        <Navbar.Text>
-                            Signed in as: <img src={user?.photoURL} width="50px" className="img-fluid" style={{ borderRadius: "50%" }} alt="" /> {user?.displayName}
-                        </Navbar.Text>
+                        {
+                            user.displayName
+                                ?
+                                    <Navbar.Text>
+                                    Signed in as: <img src={user?.photoURL} width="50px" className="img-fluid" style={{ borderRadius: "50%" }} alt="" /> {user?.displayName}
+                                    </Navbar.Text>
+                                :
+                                    ''
+                        }
 
                     </Navbar.Collapse>
 

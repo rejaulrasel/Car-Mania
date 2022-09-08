@@ -1,5 +1,7 @@
     .card{
         width: 20rem;
+        border: 1px solid pink;
+        margin-bottom: 16px;
     }
     .card:hover{
         background-color: pink;

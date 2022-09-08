@@ -16,9 +16,9 @@ const Service = ({ service, handleDelete ,admin}) => {
             <div class="card ">
                 <img src={img} class="card-img-top " alt="..." />
                 <div class="card-body">
-                    <h4 class="card-title">{name}</h4>
+                    <h4 class="card-title text-center   ">{name}</h4>
                     <p class="card-text">{description.slice(0, 250)}</p>
-                    <h3>Price: <span style={{ color: "blue" }}>{price}$</span></h3>
+                    <h3 class='text-center'> Price: <span style={{ color: "blue" }}>{price}$</span></h3>
 
                     {admin ? (
                         <button

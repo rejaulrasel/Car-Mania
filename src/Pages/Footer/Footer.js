@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import ReactDOM from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ScrollToTop from "react-scroll-to-top";
 import {
   faFacebookSquare,
   faInstagramSquare,
@@ -17,6 +18,9 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
+
+       <ScrollToTop style={{'backgroundColor':'blue'}} color='white' smooth top='200'/>
+      
       <div className="footer-container">
         <div className="container">
           <div className="row">

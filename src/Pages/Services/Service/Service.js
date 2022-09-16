@@ -12,9 +12,9 @@ const Service = ({ service, handleDelete ,admin}) => {
 
     return (
 
-        <div className="col-md-4 my-3 ">
-            <div class="card ">
-                <img src={img} class="card-img-top " alt="..." />
+        <div className="col-12 col-md-4  my-3 ">
+            <div class="card container ">
+                <img src={img} class="img-fluid " alt="..." />
                 <div class="card-body">
                     <h4 class="card-title text-center   ">{name}</h4>
                     <p class="card-text">{description.slice(0, 250)}</p>

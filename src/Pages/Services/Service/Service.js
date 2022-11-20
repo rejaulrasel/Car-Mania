@@ -12,13 +12,13 @@ const Service = ({ service, handleDelete ,admin}) => {
 
     return (
 
-        <div className="col-12 col-md-4  my-3 ">
+        <div className="col-12 col-md-4  mt-3 ">
             <div class="card container ">
                 <img src={img} class="img-fluid " alt="..." />
                 <div class="card-body">
                     <h4 class="card-title text-center   ">{name}</h4>
                     <p class="card-text">{description.slice(0, 250)}</p>
-                    <h3 class='text-center'> Price: <span style={{ color: "blue" }}>{price}$</span></h3>
+                    <h3 class='text-center'> Price: <span style={{ color: "blue" }}>{price} Tk.</span></h3>
 
                     {admin ? (
                         <button

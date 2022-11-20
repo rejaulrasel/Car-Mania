@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './HomeService.css'
 import Service from '../../Services/Service/Service';
 import {Link} from "react-router-dom";
 
@@ -16,8 +17,8 @@ const HomeService = () => {
     }, [])
 
     return (
-        <div className="my-4">
-            <h1 className="text-center">Mazda Car-Hypes </h1>
+        <div className="mb-4 pt-5 bg">
+            <h1 className="text-center text-warning">OUR TECH-VALLEY</h1>
             <div className="row container-fluid container mx-auto">
                 {
                     services.slice(0, 6).map(service => <Service
@@ -27,7 +28,7 @@ const HomeService = () => {
                 }
 
             </div>
-            <Link to="/services"><div className="mx-auto text-center"><button className="my-5 btn btn-primary text-white">See all Products</button></div></Link>
+            <Link to="/services"><div className="mx-auto text-center"><button className="mb-5 btn btn-primary text-white">See all Products</button></div></Link>
         </div>
     );
 };

@@ -3,7 +3,7 @@ import { Container, Typography, TextField, Button, CircularProgress, Alert, Grid
 import { useHistory } from 'react-router';
 import useAuth from '../../../Hooks/useAuth';
 import { NavLink} from 'react-router-dom';
-import register from '../../../images/car (6).jpg'
+import register from '../../../images/register.jpg'
 import swal from 'sweetalert';
 import Footer from '../../Footer/Footer';
 import Header from '../../Header/Header';
@@ -84,7 +84,7 @@ const Register = () => {
                     {authError && <Alert severity="error">{authError}</Alert>}
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    <img style={{ width: '100%' }} src={register} alt="" />
+                    <img className='py-3' style={{ width: '100%' }} src={register} alt="" />
                 </Grid>
             </Grid>
         </Container>

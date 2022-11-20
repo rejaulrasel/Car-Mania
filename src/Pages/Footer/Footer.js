@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-5">
               <div className="left-container text-start">
-                <h1>Car-Mania</h1>
+                <h1>RN-Tech</h1>
                 <div className="icons-container d-flex text-center ">
                   <div className="icon">
                     <FontAwesomeIcon icon={faInstagramSquare} />
@@ -46,7 +46,7 @@ const Footer = () => {
                 </p>
 
                 <p className="mt-5">
-                  <small>Car-Mania © . All rights reserved.</small>
+                  <small>RN-Tech © . All rights reserved.</small>
                 </p>
               </div>
             </div>
@@ -66,7 +66,7 @@ const Footer = () => {
             </div>
             <div className="col-md-5">
               <div className="right-footer-container">
-                <h3>Sign up for <br /> the Car-Mania</h3>
+                <h3>Sign up for <br /> the RN-Tech</h3>
                 <input
                   className="footer-input"
                   type="text"
@@ -77,7 +77,7 @@ const Footer = () => {
                     <FontAwesomeIcon icon={faPhoneVolume} />
                   </div>
                   <div>
-                    <h5>+9873645373</h5>
+                    <h5>++1138303983722</h5>
                   </div>
                 </div>
                 <div className="map d-flex align-items-center">
@@ -86,8 +86,8 @@ const Footer = () => {
                   </div>
                   <div>
                     <p>
-                      Khilgaon,
-                      <br /> 466 East Goran,Dhaka,Bangladesh
+                     East Basabo,
+                      <br />  Dhaka,Bangladesh
                     </p>
                   </div>
                 </div>

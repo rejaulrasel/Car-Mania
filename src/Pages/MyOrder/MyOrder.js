@@ -60,8 +60,8 @@ const MyOrder = () => {
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Car Name</th>
-                        <th scope="col">Car Image</th>
+                        <th scope="col">Product Name Name</th>
+                        <th scope="col">Product Name Image</th>
                         <th scope="col">User Name</th>
                         <th scope="col">User Email</th>
                         <th scope="col">Deliver Date</th>
@@ -76,7 +76,7 @@ const MyOrder = () => {
                     events.map((event, index) => (
                         <tbody key={event?._id}>
                             <tr>
-                                <td>{index + 1}</td>
+                            <td>{index + 1}</td>
                                 <td>{event?.carName}</td>
                                 <td><img src={event?.img} width="100px" style={{borderRadius:"50%"}} className="img-fluid" alt="" /> </td>
                                 <td>{event?.userName}</td>

@@ -4,7 +4,7 @@ import { Container, Typography, TextField, Button, CircularProgress, Alert } fro
 import { Grid } from '@mui/material';
 import useAuth from '../../../Hooks/useAuth';
 import { NavLink } from 'react-router-dom';
-import login from '../../../images/car (1).jpg'
+import login from '../../../images/login.jpg'
 import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
 
@@ -71,7 +71,7 @@ const Login = () => {
                     <Button onClick={handleGoogleSignIn} variant="contained">Google Sign In</Button>
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    <img style={{ width: '100%' }} src={login} alt="" />
+                    <img className='py-3' style={{ width: '100%' }} src={login} alt="" />
                 </Grid>
             </Grid>
         </Container>

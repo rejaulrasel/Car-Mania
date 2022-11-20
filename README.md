@@ -1,10 +1,10 @@
-# Car-Mania 
-## Website Link [Click Here](https://car-mania-f1b76.web.app/).
+# RN-Tech 
+## Website Link [Click Here](https://Tech products-mania-f1b76.web.app/).
 
-### This a car sales website.We sales various types of cars here with a good price.One can easily order here his/her car.HE/she can easily check the the specifications of the car also here.Our online payment system is not currently available.Happy journey here,Thank you.
+### This a Tech Product sales website.We sales various types of Tech products  here with a good price.One can easily order here his/her Tech products.HE/she can easily check the the specifications of the Tech products also here.Our online payment system is not currently available.Happy journey here,Thank you.
 
 # OVERVIEW
-## . A car sales website
+## . A Tech products sales website
 ## . You may see the products but if you want to purchase you have to log in
 ## . You can log in via GOOGLE or can register with email/password to log in
 ## . user can see all his/her order in my order page

@@ -20,6 +20,8 @@ import AddAdmin from "../AddAdmin/AddAdmin";
 import AddService from "../AddService/AddService";
 import Review from "../Review/Review";
 import AdminRoute from "../../Pages/Login/AdminRoute/AdminRoute";
+import { useState } from "react";
+import { useEffect } from "react";
 
 
 const drawerWidth = 240;
@@ -33,6 +35,24 @@ function Dashboard(props) {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
+
+  const [orders, setOrders] = useState([]);
+
+    console.log(orders)
+
+    useEffect(() => {
+        fetch(`https://polar-savannah-62685.herokuapp.com/allEvents`)
+            .then(res => res.json())
+            .then(data => setOrders(data));
+    }, [user.email]);
+
+    const [events,setEvents] = useState([]);
+
+    useEffect(() => {
+        fetch(`https://polar-savannah-62685.herokuapp.com/myEvents/${user?.email}`)
+        .then(res => res.json())
+        .then(data => setEvents(data));
+    },[user.email]);
 
   const drawer = (
     <div>
@@ -51,7 +71,7 @@ function Dashboard(props) {
               to={`${url}/manageService`}
               style={{ textDecoration: "none" }}
             >
-              <Button fullWidth>Manage Orders</Button>
+              <Button fullWidth>Manage Orders <span className="ms-4 text-danger fw-bold fs-2 p-0">{orders.length} <span className="fs-6">new</span></span></Button>
             </Link>
             <Link to={`${url}/addService`} style={{ textDecoration: "none" }}>
               <Button fullWidth>Add A Service</Button>
@@ -70,7 +90,7 @@ function Dashboard(props) {
             </Link>
 
             <Link style={{ textDecoration: "none" }} to={`${url}/myOrder`}>
-              <Button fullWidth>My Orders</Button>
+              <Button fullWidth>My Orders <span className="ms-4 text-danger fw-bold fs-2 p-0">{events.length} <span className="fs-6"></span></span></Button>
             </Link>
 
             <Link style={{ textDecoration: "none" }} to={`${url}/review`}>

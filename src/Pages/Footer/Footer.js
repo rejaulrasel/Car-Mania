@@ -86,8 +86,8 @@ const Footer = () => {
                   </div>
                   <div>
                     <p>
-                     East Basabo,
-                      <br />  Dhaka,Bangladesh
+                     Tangail Sadar,
+                      <br />  Tangail-1902,Bangladesh
                     </p>
                   </div>
                 </div>

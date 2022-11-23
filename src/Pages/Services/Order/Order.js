@@ -34,10 +34,14 @@ const Order = () => {
         })
             .then((res) => res.json())
             .then((result) => console.log(result));
+            
         console.log(data);
+        
         history.push('/home')
         swal("Congratulation!", "You have added successfully", "success");
         reset();
+
+        
     };
 
     return (

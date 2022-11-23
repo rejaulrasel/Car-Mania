@@ -54,7 +54,7 @@ const ManageService = () => {
 
     return (
         <div className="my-4">
-            <h1 className="text-center">Explore Cars</h1>
+            <h1 className="text-center">Explore the Products</h1>
             <div className="row container-fluid container mx-auto">
                 {
                     services.map(service => <Service

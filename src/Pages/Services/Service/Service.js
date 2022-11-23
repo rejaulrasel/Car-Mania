@@ -17,7 +17,7 @@ const Service = ({ service, handleDelete ,admin}) => {
                 <img src={img} class="img-fluid " alt="..." />
                 <div class="card-body">
                     <h4 class="card-title text-center   ">{name}</h4>
-                    <p class="card-text">{description.slice(0, 250)}</p>
+                    <p class="card-text">{description.slice(0, 150)}</p>
                     <h3 class='text-center'> Price: <span style={{ color: "blue" }}>{price} Tk.</span></h3>
 
                     {admin ? (

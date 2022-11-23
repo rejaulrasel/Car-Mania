@@ -8,6 +8,7 @@ import { Table } from 'react-bootstrap';
 const ManageOrder = () => {
 
     const [orders, setOrders] = useState([]);
+
     console.log(orders)
     const { user } = useAuth();
 
@@ -77,7 +78,7 @@ const ManageOrder = () => {
 
     return (
         <div className="container-fluid">
-            <h2>All Events</h2>
+            <h2 className='text-center'>All Orders</h2>
 
             <Table striped bordered>
                 <thead>

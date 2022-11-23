@@ -36,7 +36,7 @@ const AddService = () => {
                     <input className="mb-2" placeholder="Enter the Description" {...register("description", { required: true, maxLength: 10000 })} />
                     <input className="mb-2" placeholder="Enter Product Image url" {...register("img", { required: true, maxLength: 10000 })} />
                     <input className="mb-2" type="number" placeholder="Enter the Price" {...register("price", { required: true})} />
-                    <input className="btn btn-warning text-white" type="submit" />
+                    <input className="btn btn-primary text-white" type="submit" />
                 </form>
             </div>
         </div>

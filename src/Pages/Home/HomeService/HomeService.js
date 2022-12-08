@@ -8,7 +8,7 @@ const HomeService = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch('https://polar-savannah-62685.herokuapp.com/services')
+        fetch('https://rn-tech.up.railway.app/services')
             .then(res => res.json())
             .then(data => {
                 setServices(data);

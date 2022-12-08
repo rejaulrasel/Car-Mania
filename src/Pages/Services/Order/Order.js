@@ -15,7 +15,7 @@ const Order = () => {
 
 
     useEffect(() => {
-        fetch(`https://polar-savannah-62685.herokuapp.com/services/${serviceId}`)
+        fetch(`https://rn-tech.up.railway.app/services/${serviceId}`)
             .then(res => res.json())
             .then(data => setService(data))
     }, []);
@@ -27,7 +27,7 @@ const Order = () => {
         data.price = service?.price;
         data.img = service?.img;
         data.state = "pending";
-        fetch("https://polar-savannah-62685.herokuapp.com/addEvent", {
+        fetch("https://rn-tech.up.railway.app/addEvent", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

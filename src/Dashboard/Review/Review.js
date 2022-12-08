@@ -22,7 +22,7 @@ const Review = () => {
             comment: comment,
             rating: value,
         };
-        fetch("https://polar-savannah-62685.herokuapp.com/user/review", {
+        fetch("https://rn-tech.up.railway.app/user/review", {
             headers: {
                 "Content-Type": "application/json",
             },

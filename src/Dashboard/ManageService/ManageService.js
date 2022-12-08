@@ -9,7 +9,7 @@ const ManageService = () => {
     const { admin } = useAuth();
 
     useEffect(() => {
-        fetch('https://polar-savannah-62685.herokuapp.com/services')
+        fetch('https://rn-tech.up.railway.app/services')
             .then(res => res.json())
             .then(data => {
                 setServices(data);
@@ -29,7 +29,7 @@ const ManageService = () => {
             .then((willDelete) => {
                 if (willDelete) {
 
-                    fetch(`https://polar-savannah-62685.herokuapp.com/deleteService/${id}`, {
+                    fetch(`https://rn-tech.up.railway.app/deleteService/${id}`, {
                         method: "Delete",
                         headers: { "content-type": "application/json" },
                     }, [])

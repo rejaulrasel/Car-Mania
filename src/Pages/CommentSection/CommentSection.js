@@ -9,7 +9,7 @@ const CommentSection = () => {
     const [reviews, setReview] = useState([]);
 
     useEffect(() => {
-        fetch('https://rn-tech.up.railway.app/user/review')
+        fetch('https://rn-tech-server-side-production.up.railway.app/user/review')
             .then(res => res.json())
             .then(data => {
                 console.log(data);

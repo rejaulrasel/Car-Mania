@@ -41,7 +41,7 @@ function Dashboard(props) {
     console.log(orders)
 
     useEffect(() => {
-        fetch(`https://rn-tech.up.railway.app/allEvents`)
+        fetch(`https://rn-tech-server-side-production.up.railway.app/allEvents`)
             .then(res => res.json())
             .then(data => setOrders(data));
     }, [user.email]);
@@ -49,7 +49,7 @@ function Dashboard(props) {
     const [events,setEvents] = useState([]);
 
     useEffect(() => {
-        fetch(`https://rn-tech.up.railway.app/myEvents/${user?.email}`)
+        fetch(`https://rn-tech-server-side-production.up.railway.app/myEvents/${user?.email}`)
         .then(res => res.json())
         .then(data => setEvents(data));
     },[user.email]);

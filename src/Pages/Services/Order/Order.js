@@ -15,7 +15,7 @@ const Order = () => {
 
 
     useEffect(() => {
-        fetch(`https://rn-tech.up.railway.app/services/${serviceId}`)
+        fetch(`https://rn-tech-server-side-production.up.railway.app/services/${serviceId}`)
             .then(res => res.json())
             .then(data => setService(data))
     }, []);
@@ -27,7 +27,7 @@ const Order = () => {
         data.price = service?.price;
         data.img = service?.img;
         data.state = "pending";
-        fetch("https://rn-tech.up.railway.app/addEvent", {
+        fetch("https://rn-tech-server-side-production.up.railway.app/addEvent", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

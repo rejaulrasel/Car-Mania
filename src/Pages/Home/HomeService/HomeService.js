@@ -8,7 +8,7 @@ const HomeService = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch('https://rn-tech.up.railway.app/services')
+        fetch('https://rn-tech-server-side-production.up.railway.app/services')
             .then(res => res.json())
             .then(data => {
                 setServices(data);

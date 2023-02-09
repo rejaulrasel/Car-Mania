@@ -10,7 +10,7 @@ const MyOrder = () => {
     const {user} = useAuth();
 
     useEffect(() => {
-        fetch(`https://rn-tech.up.railway.app/myEvents/${user?.email}`)
+        fetch(`https://rn-tech-server-side-production.up.railway.app/myEvents/${user?.email}`)
         .then(res => res.json())
         .then(data => setEvents(data));
     },[user.email]);
@@ -28,7 +28,7 @@ const MyOrder = () => {
             .then((willDelete) => {
                 if (willDelete) {
 
-                    fetch(`https://rn-tech.up.railway.app/deleteEvents/${id}`, {
+                    fetch(`https://rn-tech-server-side-production.up.railway.app/deleteEvents/${id}`, {
                         method: "Delete",
                         headers: { "content-type": "application/json" },
                     }, [])

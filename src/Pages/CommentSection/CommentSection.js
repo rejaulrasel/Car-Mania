@@ -12,7 +12,6 @@ const CommentSection = () => {
         fetch('https://rn-tech-server-side-production.up.railway.app/user/review')
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 setReview(data);
             })
     }, [])

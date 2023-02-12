@@ -6,7 +6,8 @@ import useAuth from '../../Hooks/useAuth';
 
 
 const Header = () => {
-    const { user, logout } = useAuth();
+    const { user,login, logout } = useAuth();
+    console.log(login)
     return (
         <>
             <Navbar collapseOnSelect expand="lg" bg="black" variant="dark" sticky="top">
@@ -16,7 +17,7 @@ const Header = () => {
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link className='text-white fw-bold fs-5' as={Link} to="/home">Home</Nav.Link>
                         <Nav.Link className='text-white fw-bold fs-5' as={Link} to="/services">Shop</Nav.Link>
-                        {user?.email ?
+                        {login ?
                             <div className="d-flex flex-row me-3">
                                 <Nav.Link className='text-white fw-bold fs-5' as={Link} to="/dashboard">
                                     Dashboard
@@ -28,7 +29,7 @@ const Header = () => {
                         }
 
                         {
-                            user.displayName
+                            login
                                 ?
                                     <Navbar.Text>
                                     Signed in as: <img src={user?.photoURL} width="50px" className="img-fluid" style={{ borderRadius: "50%" }} alt="" /> {user?.displayName}

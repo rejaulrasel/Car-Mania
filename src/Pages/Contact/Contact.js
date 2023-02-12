@@ -1,7 +1,5 @@
 import React from 'react';
 import img from '../../images/Screenshot 2021-11-18 025948.png'
-import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
 
 const Contact = () => {
     return (

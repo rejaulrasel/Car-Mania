@@ -82,6 +82,7 @@ const Register = () => {
                     {isLoading && <CircularProgress />}
                     {user?.email && <Alert severity="success">User Created successfully!</Alert>}
                     {authError && <Alert severity="error">{authError}</Alert>}
+                    
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <img className='py-3' style={{ width: '100%' }} src={register} alt="" />

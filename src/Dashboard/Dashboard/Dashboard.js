@@ -38,21 +38,21 @@ function Dashboard(props) {
 
   const [orders, setOrders] = useState([]);
 
-    console.log(orders)
+  console.log(orders)
 
-    useEffect(() => {
-        fetch(`https://rn-tech-server-side-production.up.railway.app/allEvents`)
-            .then(res => res.json())
-            .then(data => setOrders(data));
-    }, [user.email]);
+  useEffect(() => {
+    fetch(`https://rn-tech-server-side-production.up.railway.app/allEvents`)
+      .then(res => res.json())
+      .then(data => setOrders(data));
+  }, [user.email]);
 
-    const [events,setEvents] = useState([]);
+  const [events, setEvents] = useState([]);
 
-    useEffect(() => {
-        fetch(`https://rn-tech-server-side-production.up.railway.app/myEvents/${user?.email}`)
-        .then(res => res.json())
-        .then(data => setEvents(data));
-    },[user.email]);
+  useEffect(() => {
+    fetch(`https://rn-tech-server-side-production.up.railway.app/myEvents/${user?.email}`)
+      .then(res => res.json())
+      .then(data => setEvents(data));
+  }, [user.email]);
 
   const drawer = (
     <div>
@@ -80,24 +80,25 @@ function Dashboard(props) {
               <Button fullWidth>Make Admin</Button>
             </Link>
           </>
-        ) : (
-          <>
-            <Link style={{ textDecoration: "none" }} to="/">
-              <Button fullWidth>Home</Button>
-            </Link>
-            <Link style={{ textDecoration: "none" }} to={`${url}/pay`}>
-              <Button fullWidth>Payment</Button>
-            </Link>
+        ) :
+          (
+            <>
+              <Link style={{ textDecoration: "none" }} to="/">
+                <Button fullWidth>Home</Button>
+              </Link>
+              <Link style={{ textDecoration: "none" }} to={`${url}/pay`}>
+                <Button fullWidth>Payment</Button>
+              </Link>
 
-            <Link style={{ textDecoration: "none" }} to={`${url}/myOrder`}>
-              <Button fullWidth>My Orders <span className="ms-4 text-danger fw-bold fs-2 p-0">{events.length} <span className="fs-6"></span></span></Button>
-            </Link>
+              <Link style={{ textDecoration: "none" }} to={`${url}/myOrder`}>
+                <Button fullWidth>My Orders <span className="ms-4 text-danger fw-bold fs-2 p-0">{events.length} <span className="fs-6"></span></span></Button>
+              </Link>
 
-            <Link style={{ textDecoration: "none" }} to={`${url}/review`}>
-              <Button fullWidth>Review</Button>
-            </Link>
-          </>
-        )}
+              <Link style={{ textDecoration: "none" }} to={`${url}/review`}>
+                <Button fullWidth>Review</Button>
+              </Link>
+            </>
+          )}
 
         <Button onClick={logout} fullWidth>
           Logout

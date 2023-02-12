@@ -10,7 +10,7 @@ import Footer from '../../Footer/Footer';
 
 const Login = () => {
     const [loginData,setLoginData] = useState({});
-    const { user, loginUser, signInWithGoogle, isLoading, authError } = useAuth();
+    const { user,login, loginUser, signInWithGoogle, isLoading, authError } = useAuth();
 
     const location = useLocation();
     const history = useHistory();
@@ -64,7 +64,7 @@ const Login = () => {
                             <Button variant="text">New User? Please Register</Button>
                         </NavLink>
                         {isLoading && <CircularProgress />}
-                        {user?.email && <Alert severity="success">Login successfully!</Alert>}
+                        {!login && <Alert severity="success">Please Login!</Alert>}
                         {authError && <Alert severity="error">{authError}</Alert>}
                     </form>
                     <p>------------------------</p>

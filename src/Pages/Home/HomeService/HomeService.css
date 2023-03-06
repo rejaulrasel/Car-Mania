@@ -1,7 +1,7 @@
 .bg{
-    background-image: url(../../../images/homeserviceimg.jpg);
+    background-image: url(../../../images/4884841.jpg);
     height: 100%;
     background-size: cover;
-    
-
+    background-attachment: fixed;
+    position: relative;
 }

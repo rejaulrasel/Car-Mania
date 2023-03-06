@@ -11,7 +11,7 @@ const Banner = () => {
             <Carousel>
                 <Carousel.Item>
                     <img
-                        style={{height:'90vh'}} 
+                        style={{height:'95vh'}} 
                         className="d-block w-100"
                         src={banner1}
                         alt="Royal Enfield Classic 350"

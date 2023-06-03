@@ -22,7 +22,7 @@ const Review = () => {
             comment: comment,
             rating: value,
         };
-        fetch("https://rn-tech-server-side-production.up.railway.app/user/review", {
+        fetch("https://rn-tech-valley-production.up.railway.app/user/review", {
             headers: {
                 "Content-Type": "application/json",
             },

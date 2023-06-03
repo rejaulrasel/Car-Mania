@@ -13,7 +13,7 @@ const AddAdmin = () => {
      const handleAdminSubmit = e =>{
         const user = {email}
 
-        fetch('https://rn-tech-server-side-production.up.railway.app/users/adminAdd', {
+        fetch('https://rn-tech-valley-production.up.railway.app/users/adminAdd', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

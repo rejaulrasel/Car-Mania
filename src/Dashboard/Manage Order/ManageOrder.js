@@ -13,7 +13,7 @@ const ManageOrder = () => {
     const { user } = useAuth();
 
     useEffect(() => {
-        fetch(`https://rn-tech-server-side-production.up.railway.app/allEvents`)
+        fetch(`https://rn-tech-valley-production.up.railway.app/allEvents`)
             .then(res => res.json())
             .then(data => setOrders(data));
     }, [user.email]);
@@ -30,7 +30,7 @@ const ManageOrder = () => {
             .then((willDelete) => {
                 if (willDelete) {
 
-                    fetch(`https://rn-tech-server-side-production.up.railway.app/deleteEvents/${id}`, {
+                    fetch(`https://rn-tech-valley-production.up.railway.app/deleteEvents/${id}`, {
                         method: "Delete",
                         headers: { "content-type": "application/json" },
                     }, [])
@@ -59,7 +59,7 @@ const ManageOrder = () => {
 
         if (order?.state === "pending") {
             axios
-                .put(`https://rn-tech-server-side-production.up.railway.app/updateState/${id}`, {
+                .put(`https://rn-tech-valley-production.up.railway.app/updateState/${id}`, {
                     state: "Shipped",
                 })
                 .then((res) => {

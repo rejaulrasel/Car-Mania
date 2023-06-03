@@ -9,7 +9,7 @@ const ManageService = () => {
     const { admin } = useAuth();
 
     useEffect(() => {
-        fetch('https://rn-tech-server-side-production.up.railway.app/services')
+        fetch('https://rn-tech-valley-production.up.railway.app/services')
             .then(res => res.json())
             .then(data => {
                 setServices(data);
@@ -29,7 +29,7 @@ const ManageService = () => {
             .then((willDelete) => {
                 if (willDelete) {
 
-                    fetch(`https://rn-tech-server-side-production.up.railway.app/deleteService/${id}`, {
+                    fetch(`https://rn-tech-valley-production.up.railway.app/deleteService/${id}`, {
                         method: "Delete",
                         headers: { "content-type": "application/json" },
                     }, [])
